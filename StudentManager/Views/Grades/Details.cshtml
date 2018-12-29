@@ -1,0 +1,52 @@
+﻿@model StudentManager.Models.Grade
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Grade</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GradeName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GradeName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+        
+    </dl>
+</div>
+<div>
+    @foreach (var su in Model.SubjectGrades)
+    {
+        <p>
+            @su.SubjectId
+        </p>
+    }
+    Sinh vien
+    @foreach (var su in Model.GradeStudents)
+    {
+        <p>
+            @su.AccountId
+        </p>
+    }
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
