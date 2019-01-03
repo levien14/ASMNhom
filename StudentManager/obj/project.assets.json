@@ -12225,11 +12225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\ASMEAP2\\StudentManager\\StudentManager\\StudentManager.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\ASMEAP2\\ASMNhom\\StudentManager\\StudentManager.csproj",
       "projectName": "StudentManager",
-      "projectPath": "C:\\Users\\Hp\\Desktop\\ASMEAP2\\StudentManager\\StudentManager\\StudentManager.csproj",
+      "projectPath": "C:\\Users\\Hp\\Desktop\\ASMEAP2\\ASMNhom\\StudentManager\\StudentManager.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\Desktop\\ASMEAP2\\StudentManager\\StudentManager\\obj\\",
+      "outputPath": "C:\\Users\\Hp\\Desktop\\ASMEAP2\\ASMNhom\\StudentManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
