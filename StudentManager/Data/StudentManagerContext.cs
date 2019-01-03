@@ -14,6 +14,12 @@ namespace StudentManager.Models
         }
 
         public DbSet<StudentManager.Models.Account> Account { get; set; }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Grade>()
+                .HasIndex(u => u.GradeName)
+                .IsUnique();
+        }
         public DbSet<StudentManager.Models.Person> Person { get; set; }
         public DbSet<StudentManager.Models.Subject> Subject { get; set; }
         public DbSet<StudentManager.Models.Grade> Grade { get; set; }
